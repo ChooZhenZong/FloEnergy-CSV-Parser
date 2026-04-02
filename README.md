@@ -7,7 +7,7 @@ This program parses FloEnergy CSV files and generates SQL insert statements for 
 
 ## Java Version
 
-The program was coded using **Java 25**, but the **minimum Java version required** to build or run it is **Java 9**.
+The program was coded locally using **Java 25**, but the **minimum Java version required** to build or run it is **Java 9**.
 
 ### Java Features Used
 
@@ -51,6 +51,29 @@ java -cp bin Main "path/to/input.csv" "path/to/output.sql"
 - Output: `output.sql` in the project root  
 
 ---
+Alternatively if you use IntellJ as an IDE.
+### Running the Program in IntelliJ IDEA
+
+1. **Import the Project**
+    - Open IntelliJ IDEA and select **File → Open**.
+    - Navigate to the project folder and import it as a **Java project**.
+
+2. **Set the JDK**
+    - Go to **File → Project Structure → Project**.
+    - Set the **Project SDK** to **Java 9** (or higher).
+
+3. **Run the Main Class**
+    - Locate the `Main` class in the `src` folder.
+    - Right-click on `Main.java` and select **Run 'Main.main()'**.
+
+4. **Supplying Input and Output Paths**
+    - You can provide the CSV input and output file paths as **program arguments**:
+      ```
+      "path/to/input.csv" "path/to/output.sql"
+      ```  
+    - If no arguments are supplied, the program will default to:
+        - Input: `src/Resource/test.csv`
+        - Output: `output.sql` in the `src` folder
 
 ## Notes
 
@@ -59,3 +82,20 @@ java -cp bin Main "path/to/input.csv" "path/to/output.sql"
 - Large CSV files may need streaming or batch processing to avoid memory issues.  
 - Constants for CSV column indexes and table names are defined in `CsvConstants` and `DBConstants` classes for easier maintenance.
 
+
+## FloEnergy CSV Parser - Assessment Write-Up
+
+### Q1. What is the rationale for the technologies you have decided to use?
+I chose **Java** because it is the language I know best and provides robust built-in APIs for handling CSV parsing, file I/O, and date/time operations. Java also has strong support for building scalable and maintainable programs. While **Python** could also be a good choice due to its extensive libraries for CSV parsing and data processing, I opted for Java because of familiarity and its stability for handling large datasets.
+
+### Q2. What would you have done differently if you had more time?
+If I had more time, I would:
+- Add **unit tests** to ensure correctness and facilitate future maintenance.
+- Handle more **edge cases** in the CSV, such as missing or malformed values.
+- Introduce **better code patterns**, for example, using interfaces or strategy patterns to separate processing logic for different record types (200, 300, etc.).
+
+### Q3. What is the rationale for the design choices that you have made?
+Given the program’s role as a CSV parser and the **unclear requirements**, 
+I aimed to keep the design simple and practical. 
+Overengineering could have introduced unnecessary complexity. 
+The current design prioritizes readability, maintainability, and straightforward handling of the key record types while allowing easy extension in the future.
