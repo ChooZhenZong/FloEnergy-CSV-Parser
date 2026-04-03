@@ -47,7 +47,8 @@ void main(String[] args) {
 
                 int intervalCounter = 0;
 
-                for (int i = 2; i < parts.length; i++) {
+                // 300 record: values from index 2 onwards are interval consumption
+                for (int i = CsvConstants.FIRST_CONSUMPTION_COLUMN; i < parts.length; i++) {
                     String value = parts[i].trim();
 
                     if (value.isEmpty() || value.equals("0")) {
