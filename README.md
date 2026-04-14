@@ -10,6 +10,9 @@ First drafts are never perfect, the way this take home assignment was done was t
 to discuss if the sql statements are being generated properly, how can we refactor, what can we change, what are the trade offs of say generating a single sql statement vs a batch statement?
 from there we iterate into the next proper version.
 
+take a look at my latest changes, it now seperates the logics into it's own class instead of evverything in the main class, 
+which we can now do further refactoring and add loggings to each of the class. which scales better if i add interfaces/abstract classes
+
 I have seen cases where overengineering brings a hard time refactoring and changing of logic. and jumping the gun wasted more time than not.
 
 Interviewing for a developers job is a mess, there are no right standards. there are multiple ways to fix or program.
