@@ -13,7 +13,9 @@ from there we iterate into the next proper version.
 I have seen cases where overengineering brings a hard time refactoring and changing of logic. and jumping the gun wasted more time than not.
 
 Interviewing for a developers job is a mess, there are no right standards. there are multiple ways to fix or program.
-it is easy being the interviewers as you set the standard and questions,
+it is easy being the interviewer as you set the standard and questions, you have ample time to prepare for the questions in advance and the answers to it
+even more easily done so as we now have AI. where the candidates are often restricted or barred from using it.
+
 I can personally say that, I have seen cases where an interviewer grilled my standard which was not up to par,
 but when i got into the company anyways, i saw their code practices and it was the case of the Pot calling the kettle black.
 e.g class was bloated, not a single reposibility, nested if else checks,
