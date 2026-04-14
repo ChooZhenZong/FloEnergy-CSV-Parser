@@ -10,18 +10,18 @@ First drafts are never perfect, the way this take home assignment was done was t
 to discuss if the sql statements are being generated properly, how can we refactor, what can we change, what are the trade offs of say generating a single sql statement vs a batch statement?
 from there we iterate into the next proper version.
 
-take a look at my latest changes, it now seperates the logics into it's own class instead of evverything in the main class, 
-which we can now do further refactoring and add loggings to each of the class. which scales better if i add interfaces/abstract classes
+take a look at my latest changes, it now seperates the logics into it's own class instead of everything in the main class, 
+which we can now do further refactoring and add loggings to each of the class. which scales better in future and even more so if I add interfaces/abstract classes
 
 I have seen cases where overengineering brings a hard time refactoring and changing of logic. and jumping the gun wasted more time than not.
 
 Interviewing for a developers job is a mess, there are no right standards. there are multiple ways to fix or program.
 it is easy being the interviewer as you set the standard and questions, you have ample time to prepare for the questions in advance and the answers to it
-even more easily done so as we now have AI. where the candidates are often restricted or barred from using it.
+even more easily done so as they are alble to use AI. where the candidates are often restricted or barred from using it.
 
 I can personally say that, I have seen cases where an interviewer grilled my standard which was not up to par,
-but when i got into the company anyways, i saw their code practices and it was the case of the Pot calling the kettle black.
-e.g class was bloated, not a single reposibility, nested if else checks,
+but when I got into the company anyways, i saw their code practices and it was the case of the "Pot calling the kettle black".
+e.g class was bloated, not a single reposibility, nested if else checks, using non thread safe data type for building strings, e.g StringBuilder instead of StringBuffer
 
 but the code functionality still work in "production" and still generating money for the company.
 
