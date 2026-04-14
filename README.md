@@ -3,6 +3,27 @@
 
 This program parses FloEnergy CSV files and generates SQL insert statements for meter readings.
 
+Updated 14/06/2026
+Got rejected for being too simple, e.g seperating of logic into proper classes, incorrect values? being generated, not being production ready.
+
+First drafts are never perfect, the way this take home assignment was done was to invite a potential collaboration effort where it simulates a Push request review
+to discuss if the sql statements are being generated properly, how can we refactor, what can we change, what are the trade offs of say generating a single sql statement vs a batch statement?
+from there we iterate into the next proper version.
+
+I have seen cases where overengineering brings a hard time refactoring and changing of logic. and jumping the gun wasted more time than not.
+
+Interviewing for a developers job is a mess, there are no right standards. there are multiple ways to fix or program.
+it is easy being the interviewers as you set the standard and questions,
+I can personally say that, I have seen cases where an interviewer grilled my standard which was not up to par,
+but when i got into the company anyways, i saw their code practices and it was the case of the Pot calling the kettle black.
+e.g class was bloated, not a single reposibility, nested if else checks,
+
+but the code functionality still work in "production" and still generating money for the company.
+
+we have all pushed code that we are not proud of due to unclear requirements or time crunch, 
+we have pushed code that we do not understand, 
+but first and foremost will always be business need compared to "coding standards".
+
 ---
 
 ## Java Version
